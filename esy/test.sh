@@ -12,7 +12,7 @@ if which x86_64-w64-mingw32-gcc; then
 else
     CC=gcc
     BUILDDIR=$(pwd)/_build
-    ADDITIONAL_LIBS=-lm
+    ADDITIONAL_LIBS=-lm -framework Cocoa
 fi
 
 echo "Using build directory: $BUILDDIR"
