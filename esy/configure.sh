@@ -1,2 +1,2 @@
 cd _build
-./configure --prefix=$cur__install
+cmake -G "Unix Makefiles" ../harfbuzz-1.9.0 -DCMAKE_INSTALL_PREFIX=$cur__install
