@@ -12,7 +12,11 @@ if which x86_64-w64-mingw32-gcc; then
 else
     CC=gcc
     BUILDDIR=$(pwd)/_build
-    ADDITIONAL_LIBS=-lm -framework Cocoa
+    if [ "$(uname)" == "Darwin"]; then
+        ADDITIONAL_LIBS=-framework Foundation
+    else
+        ADDITIONAL_LIBS=-lm
+    fi
 fi
 
 echo "Using build directory: $BUILDDIR"
