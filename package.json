@@ -5,15 +5,15 @@
   "license": "MIT",
   "esy": {
     "build": [
-        ["bash", "-c", "#{os == 'windows' ? './esy/configure-windows.sh' : './configure'}"],
-        ["make"],
-        ["make", "install"]
+        ["./esy/prep.sh"],
+        ["bash", "-c", "#{os == 'windows' ? './esy/configure-windows.sh' : './esy/configure.sh'}"],
+        ["./esy/build.sh"],
         ["./esy/test.sh"]
     ],
     "buildsInSource": "_build",
     "exportedEnv": {
         "HARFBUZZ_INCLUDE_PATH": {
-            "val": "#{self.install / 'include' / 'freetype2'}",
+            "val": "#{self.install / 'include' / 'harfbuzz'}",
             "scope": "global"
         },
         "HARFBUZZ_LIB_PATH": {
@@ -27,12 +27,5 @@
     }
   },
   "dependencies": {
-      "esy-cmake": "*"
-  },
-  "resolutions": {
-      "esy-cmake": "github:bryphe/esy-cmake#5a40a8e"
-  },
-  "devDependencies": {
-      "esy-cmake": "*"
   }
 }
