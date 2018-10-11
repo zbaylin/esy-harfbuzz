@@ -1911,7 +1911,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_buffer_serialize-test-buffer-serialize.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_ot_tag-hb-ot-tag.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_size_params-test-size-params.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_would_substitute-test-would-substitute.Po@am__quote@
 
 .cc.o:
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -3620,9 +3619,11 @@ built-sources: $(BUILT_SOURCES)
 .PHONY: unicode-tables arabic-table indic-table use-table built-sources
 # We decided to add ragel-generated files to git...
 #MAINTAINERCLEANFILES += $(RAGEL_GENERATED)
-$(srcdir)/%.hh: $(srcdir)/%.rl
-	$(AM_V_GEN)(cd $(srcdir) && $(RAGEL) -e -F1 -o "$*.hh" "$*.rl") \
-	|| ($(RM) "$@"; false)
+
+# [esy-harfbuzz] -remove this generation:
+# $(srcdir)/%.hh: $(srcdir)/%.rl
+# 	$(AM_V_GEN)(cd $(srcdir) && $(RAGEL) -e -F1 -o "$*.hh" "$*.rl") \
+# 	|| ($(RM) "$@"; false)
 
 @HAVE_INTROSPECTION_TRUE@-include $(INTROSPECTION_MAKEFILE)
 
