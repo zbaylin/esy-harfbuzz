@@ -324,9 +324,11 @@ EXTRA_DIST += \
 	$(NULL)
 # We decided to add ragel-generated files to git...
 #MAINTAINERCLEANFILES += $(RAGEL_GENERATED)
-$(srcdir)/%.hh: $(srcdir)/%.rl
-	$(AM_V_GEN)(cd $(srcdir) && $(RAGEL) -e -F1 -o "$*.hh" "$*.rl") \
-	|| ($(RM) "$@"; false)
+
+# [esy-harfbuzz] - remove this generation:
+# $(srcdir)/%.hh: $(srcdir)/%.rl
+# 	$(AM_V_GEN)(cd $(srcdir) && $(RAGEL) -e -F1 -o "$*.hh" "$*.rl") \
+# 	|| ($(RM) "$@"; false)
 
 noinst_PROGRAMS = \
 	main \
