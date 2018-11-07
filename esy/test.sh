@@ -8,9 +8,15 @@ if which x86_64-w64-mingw32-gcc; then
     # Copy runtime mingw files
     BUILDDIR=$(pwd)/esy
     cp /usr/x86_64-w64-mingw32/sys-root/mingw/bin/*.dll $BUILDDIR/.
+    ADDITIONAL_LIBS=
 else
     CC=gcc
     BUILDDIR=$(pwd)/_build
+    if [ "$(uname)" == "Darwin"]; then
+        ADDITIONAL_LIBS=-framework Foundation
+    else
+        ADDITIONAL_LIBS=-lm
+    fi
 fi
 
 echo "Using build directory: $BUILDDIR"
@@ -31,5 +37,5 @@ cp $cur__bin/*.dll .
 export PATH=$PATH:$cur__bin:$cur__lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$cur__lib
 
-$CC $ROOTDIR/esy/test.c -o test.exe -std=c99 -I$INCLUDE -L$cur__lib -lharfbuzz
+$CC $ROOTDIR/esy/test.c -o test.exe -std=c99 -I$INCLUDE -L$cur__lib -lharfbuzz $ADDITIONAL_LIBS
 ./test.exe $ROOTDIR/esy/Roboto-Regular.ttf "test=>text"
