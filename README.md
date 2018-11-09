@@ -1,6 +1,6 @@
 ### `esy` build status
-[![Build status](https://ci.appveyor.com/api/projects/status/26jfwm55wk9t6w4j/branch/esy?svg=true)](https://ci.appveyor.com/project/bryphe/esy-harfbuzz/branch/esy)
-[![Build Status](https://travis-ci.org/bryphe/esy-harfbuzz.svg?branch=esy)](https://travis-ci.org/bryphe/esy-harfbuzz)
+[![Build Status](https://dev.azure.com/esy-packages/esy-harfbuzz/_apis/build/status/esy-packages.esy-harfbuzz)](https://dev.azure.com/esy-packages/esy-harfbuzz/_build/latest?definitionId=4)
+[![npm version](https://badge.fury.io/js/esy-harfbuzz.svg)](https://badge.fury.io/js/esy-harfbuzz)
 
  -----------
 
