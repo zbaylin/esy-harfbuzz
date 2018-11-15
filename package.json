@@ -27,12 +27,9 @@
     }
   },
   "dependencies": {
-      "esy-cmake": "*"
-  },
-  "resolutions": {
-      "esy-cmake": "github:bryphe/esy-cmake#5a40a8e"
+      "esy-cmake": "^0.3.2"
   },
   "devDependencies": {
-      "esy-cmake": "*"
+      "esy-cmake": "^0.3.2"
   }
 }
