@@ -1,0 +1,10 @@
+parameters:
+  platform: "win32"
+
+steps:
+  - script: node .ci/prebuilt-library/copy-install-to-prebuilt.js
+  - task: PublishBuildArtifacts@1
+    displayName: "Publish Artifact: ${{ parameters.platform }}"
+    inputs:
+      PathToPublish: "_prebuilt"
+      ArtifactName: ${{ parameters.platform }}
