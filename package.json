@@ -1,6 +1,6 @@
 {
   "name": "esy-harfbuzz",
-  "version": "1.9.1002",
+  "version": "1.9.1004",
   "description": "Mirror of harfbuzz",
   "license": "MIT",
   "esy": {
