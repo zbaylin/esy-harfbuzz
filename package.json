@@ -3,6 +3,7 @@
   "version": "1.9.1005",
   "description": "Mirror of harfbuzz",
   "license": "MIT",
+  "url": "https://github.com/bryphe/esy-harfbuzz",
   "esy": {
     "build": [
         ["./esy/prep.sh"],
