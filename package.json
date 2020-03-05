@@ -1,6 +1,6 @@
 {
   "name": "esy-harfbuzz",
-  "version": "1.9.1005",
+  "version": "1.9.1006",
   "description": "Mirror of harfbuzz",
   "license": "MIT",
   "url": "https://github.com/bryphe/esy-harfbuzz",
