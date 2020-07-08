@@ -20,6 +20,9 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: 12
+    - name: Install dependencies (Ubuntu)
+      run: sudo apt install libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libegl1-mesa-dev mesa-utils mesa-utils-extra ragel
+      if: matrix.os == 'ubuntu-latest'
     # Install esy@0.6.6
     - name: Install esy
       run: npm i -g esy
