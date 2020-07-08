@@ -1,5 +1,5 @@
 {
-  "name": "esy-harfbuzz",
+  "name": "@revery/esy-harfbuzz",
   "version": "2.6.8000",
   "description": "Mirror of harfbuzz",
   "license": "MIT",
