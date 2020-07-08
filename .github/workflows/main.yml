@@ -2,9 +2,9 @@ name: Continuous Integration
 
 on:
   push:
-    branches: [ master ]
+    branches: [ esy ]
   pull_request:
-    branches: [ master ]
+    branches: [ esy ]
 
 jobs:
   build:
