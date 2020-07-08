@@ -1,0 +1,29 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    name: "Build ${{ matrix.os }}"
+    strategy:
+      matrix:
+        os: [windows-2016, ubuntu-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+    # Install node
+    - uses: actions/setup-node@v2-beta
+      with:
+        node-version: 12
+    # Install esy@0.6.6
+    - name: Install esy
+      run: npm i -g esy
+    - name: Install dependencies
+      run: esy i
+    - name: Build project
+      run: esy build
