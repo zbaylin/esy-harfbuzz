@@ -8,6 +8,8 @@
     "build": [
         ["./esy/prep.sh"],
         ["bash", "-c", "#{os == 'windows' ? 'echo windows!' : 'echo'}"],
+        ["bash", "-c", "#{os == 'windows' ? 'ls .' : 'echo'}"],
+        ["bash", "-c", "#{os == 'windows' ? 'ls ./esy' : 'echo'}"],
         ["bash", "-c", "#{os == 'windows' ? './esy/configure-windows.sh' : 'echo'}"],
         ["bash", "-c", "#{os == 'darwin' ? './esy/configure-osx.sh' : 'echo'}"],
         ["bash", "-c", "#{os == 'linux' ? './esy/configure-linux.sh' : 'echo'}"],
