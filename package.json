@@ -28,7 +28,5 @@
         }
     }
   },
-  "dependencies": {
-      "@revery/esy-cmake": "revery-ui/esy-cmake#69335b9"
-  }
+  "dependencies": { }
 }
