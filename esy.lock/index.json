@@ -1,5 +1,5 @@
 {
-  "checksum": "ffebac8adf799e197256257457b9e653",
+  "checksum": "0cc961f41dbf4ff5ab5654751a4ba36e",
   "root": "@revery/esy-harfbuzz@link-dev:./package.json",
   "node": {
     "@revery/esy-harfbuzz@link-dev:./package.json": {
@@ -10,20 +10,6 @@
         "type": "link-dev",
         "path": ".",
         "manifest": "package.json"
-      },
-      "overrides": [],
-      "dependencies": [
-        "@revery/esy-cmake@github:revery-ui/esy-cmake#69335b9@d41d8cd9"
-      ],
-      "devDependencies": []
-    },
-    "@revery/esy-cmake@github:revery-ui/esy-cmake#69335b9@d41d8cd9": {
-      "id": "@revery/esy-cmake@github:revery-ui/esy-cmake#69335b9@d41d8cd9",
-      "name": "@revery/esy-cmake",
-      "version": "github:revery-ui/esy-cmake#69335b9",
-      "source": {
-        "type": "install",
-        "source": [ "github:revery-ui/esy-cmake#69335b9" ]
       },
       "overrides": [],
       "dependencies": [],
