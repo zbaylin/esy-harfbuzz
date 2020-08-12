@@ -1,5 +1,5 @@
 {
-  "checksum": "d3710edf6d48115609e1a978e2ccc646",
+  "checksum": "ffebac8adf799e197256257457b9e653",
   "root": "@revery/esy-harfbuzz@link-dev:./package.json",
   "node": {
     "@revery/esy-harfbuzz@link-dev:./package.json": {
@@ -12,18 +12,18 @@
         "manifest": "package.json"
       },
       "overrides": [],
-      "dependencies": [ "@revery/esy-cmake@0.3.5001@d41d8cd9" ],
+      "dependencies": [
+        "@revery/esy-cmake@github:revery-ui/esy-cmake#69335b9@d41d8cd9"
+      ],
       "devDependencies": []
     },
-    "@revery/esy-cmake@0.3.5001@d41d8cd9": {
-      "id": "@revery/esy-cmake@0.3.5001@d41d8cd9",
+    "@revery/esy-cmake@github:revery-ui/esy-cmake#69335b9@d41d8cd9": {
+      "id": "@revery/esy-cmake@github:revery-ui/esy-cmake#69335b9@d41d8cd9",
       "name": "@revery/esy-cmake",
-      "version": "0.3.5001",
+      "version": "github:revery-ui/esy-cmake#69335b9",
       "source": {
         "type": "install",
-        "source": [
-          "archive:https://registry.npmjs.org/@revery/esy-cmake/-/esy-cmake-0.3.5001.tgz#sha1:19d35421b8ec11c545a16071fc23c5ceb03a2bcb"
-        ]
+        "source": [ "github:revery-ui/esy-cmake#69335b9" ]
       },
       "overrides": [],
       "dependencies": [],
