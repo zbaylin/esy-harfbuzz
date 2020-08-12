@@ -7,6 +7,7 @@
   "esy": {
     "build": [
         ["./esy/prep.sh"],
+        ["echo BIN: #{@revery/esy-cmake.bin}"],
         ["bash", "-c", "#{os == 'windows' ? 'echo windows!' : 'echo'}"],
         ["bash", "-c", "#{os == 'windows' ? 'ls .' : 'echo'}"],
         ["bash", "-c", "#{os == 'windows' ? 'ls ./esy' : 'echo'}"],
