@@ -29,6 +29,6 @@
     }
   },
   "dependencies": {
-      "esy-cmake": "revery-ui/esy-cmake#e68ff90"
+      "@revery/esy-cmake": "^0.3.5001"
   }
 }
