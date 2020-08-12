@@ -14,6 +14,8 @@ touch src/harfbuzz-subset.def
 touch src/harfbuzz-icu.def
 touch src/harfbuzz-gobject.def
 
+touch src/*.hh
+
 echo "**BUILD STARTED**"
 make
 echo "**BUILD COMPLETE**"
