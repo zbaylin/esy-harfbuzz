@@ -4,3 +4,4 @@ cd _build
 
 # Create harfbuzz.def to skip generating python definitions
 touch src/harfbuzz.def
+touch src/*.hh

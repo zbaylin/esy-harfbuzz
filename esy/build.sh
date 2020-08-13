@@ -7,6 +7,12 @@ touch Makefile.in
 touch configure
 touch config.h.in
 
+# touching the .h files needs to come before python def file generation,
+# since those are dependent on header files
+touch src/*.hh
+touch src/hb-version.h
+touch src/harfbuzz.cc
+
 # OS_WIN32 invokes a python def file generator for MVSC linking,
 # which we don't need (it's implied by host - mingw)
 touch src/harfbuzz.def

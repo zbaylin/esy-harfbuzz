@@ -28,10 +28,5 @@
         }
     }
   },
-  "dependencies": {
-      "esy-cmake": "^0.3.2"
-  },
-  "devDependencies": {
-      "esy-cmake": "^0.3.2"
-  }
+  "dependencies": { }
 }
