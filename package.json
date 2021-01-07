@@ -6,11 +6,11 @@
   "url": "https://github.com/bryphe/esy-harfbuzz",
   "esy": {
     "build": [
-        ["./esy/prep.sh"],
+        ["bash", "-c", "./esy/prep.sh"],
         ["bash", "-c", "#{os == 'windows' ? './esy/configure-windows.sh' : 'echo'}"],
         ["bash", "-c", "#{os == 'darwin' ? './esy/configure-osx.sh' : 'echo'}"],
         ["bash", "-c", "#{os == 'linux' ? './esy/configure-linux.sh' : 'echo'}"],
-        ["./esy/build.sh"]
+        ["bash", "-c", "./esy/build.sh"]
     ],
     "buildsInSource": "_build",
     "exportedEnv": {
