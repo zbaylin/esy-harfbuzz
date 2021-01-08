@@ -1,6 +1,6 @@
 ### `esy` build status
 [![Build Status](https://dev.azure.com/esy-packages/esy-harfbuzz/_apis/build/status/esy-packages.esy-harfbuzz)](https://dev.azure.com/esy-packages/esy-harfbuzz/_build/latest?definitionId=4)
-[![npm version](https://badge.fury.io/js/esy-harfbuzz.svg)](https://badge.fury.io/js/esy-harfbuzz)
+[![npm version](https://badge.fury.io/js/%40revery%2Fesy-harfbuzz.svg)](https://badge.fury.io/js/%40revery%2Fesy-harfbuzz)
 
  -----------
 
